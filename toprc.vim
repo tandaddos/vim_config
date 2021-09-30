@@ -1,0 +1,21 @@
+let s:path_to_this_script = expand('<sfile>:p:h')
+execute 'source ' s:path_to_this_script . '/call_vim_plugin.vim'
+execute 'source ' s:path_to_this_script . '/general/settings.vim'
+execute 'source ' s:path_to_this_script . '/keys/mappings.vim'
+execute 'source ' s:path_to_this_script . '/keys/which-key.vim'
+execute 'source ' s:path_to_this_script . '/colors_themes/generic_color.vim'
+execute 'source ' s:path_to_this_script . '/colors_themes/generic_color.vim'
+
+execute 'source ' s:path_to_this_script . '/plugin_config/cscope_config.vim'
+execute 'source ' s:path_to_this_script . '/plugin_config/NERDTree_config.vim'
+execute 'source ' s:path_to_this_script . '/plugin_config/vim_fugitive_config.vim'
+execute 'source ' s:path_to_this_script . '/plugin_config/easytags_config.vim'
+execute 'source ' s:path_to_this_script . '/plugin_config/syntastic_config.vim'
+execute 'source ' s:path_to_this_script . '/plugin_config/ctrl_p_config.vim'
+execute 'source ' s:path_to_this_script . '/plugin_config/NERDCommenter_config.vim'
+execute 'source ' s:path_to_this_script . '/plugin_config/NERDTree_config.vim'
+execute 'source ' s:path_to_this_script . '/plugin_config/ack.vim'
+"execute 'source ' s:path_to_this_script . '/plugin_config/black_config.vim'
+"execute 'source ' s:path_to_this_script . '/plugin_config/gutentag_config.vim'
+execute 'source ' s:path_to_this_script . '/plugin_config/start-screen.vim'
+
