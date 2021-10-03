@@ -31,11 +31,14 @@ Plug 'tpope/vim-surround'
 Plug 'nvie/vim-flake8'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-"Plug 'ambv/black'
+"Plug 'ambv/black"
 Plug 'mhinz/vim-startify'
 Plug 'liuchengxu/vim-which-key'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release' }
+Plug 'tpope/vim-scriptease'
+Plug 'plasticboy/vim-markdown'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 call plug#end()
 
