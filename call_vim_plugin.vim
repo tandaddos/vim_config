@@ -13,7 +13,9 @@ endif
 
 
 call plug#begin(vim_config_dir . '/autoload/plugged/')
-Plug 'junegunn/fzf.vim', {'do': { -> fzf#install() }}
+Plug 'junegunn/fzf'
+" Plug 'junegunn/fzf.vim', {'do': { -> fzf#install() }}
+Plug 'junegunn/fzf.vim' 
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
