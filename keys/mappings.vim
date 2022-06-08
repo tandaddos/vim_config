@@ -18,9 +18,11 @@ nnoremap <M-l>    :vertical resize +2<CR>
 inoremap jk <Esc>
 inoremap kj <Esc>
 
-" Easy CAPS alt 
-inoremap <M-u> <ESC>viwUi
-nnoremap <M-u> viwU<Esc>
+" Easy CAPS
+" inoremap <c-u> <ESC>viwUi
+" nnoremap <c-u> viwU<Esc>
+inoremap <S-F6> <ESC>viwUi
+nnoremap <S-F6> viwU<Esc>
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
