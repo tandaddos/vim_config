@@ -1,4 +1,4 @@
-let g:startify_session_dir = '~/myhome/vim_config/sessions/'
+let g:startify_session_dir = '~/.config/vim/sessions/'
 let g:startify_lists = [
           \ { 'type': 'files',     'header': ['   Files']            },
           \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
@@ -10,11 +10,8 @@ let g:startify_lists = [
 " \ { 'i': '~/.config/nvim/init.vim' },
 " \ { 'z': '~/.zshrc' },
 let g:startify_bookmarks = [
-            \ { 'p': '~/myhome/vim_config/call_vim_plugin.vim' },
-            \ { 't': '~/myhome/vim_config/toprc.vim' },
-            \ '~/myhome/exps/projects/cpp',
-            \ '~/myhome/exps/projects/java',
-            \ '~/myhome/exps/projects/misc',
+            \ { 'p': '~/.config/vim/call_vim_plugin.vim' },
+            \ { 't': '~/.config/vim/toprc.vim' },
             \ '~/Pictures',
             \ ]
 

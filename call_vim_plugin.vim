@@ -1,18 +1,18 @@
 " Install vim-plug if not found
-let vim_config_dir = '~/bin/vim_config'
+" let vim_config_dir = '~/.config/vim/autoload/plug.vim'
+let vim_config_dir = '~/.config/vim/'
 if empty(glob(vim_config_dir . '/autoload/plug.vim'))
-    silent execute '!/usr/bin/curl -fLo ~/bin/vim_config/autoload/plug.vim 
-                \ --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-    " autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+    silent execute '!/usr/bin/curl -fLo '.vim_config_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 " Run PlugInstall if there are missing plugins
-" autocmd VimEnter * if len(filter(vdalues(g:plugs), '!isdirectory(v:val.dir)'))
-"  \| PlugInstall --sync | source $MYVIMRC
-"  \| endif
-
-
-call plug#begin(vim_config_dir . '/autoload/plugged/')
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+ 
+"call plug#begin(vim_config_dir . '/autoload/plugged/')
+call plug#begin( '~/.config/vim//autoload/plugged/')
 Plug 'junegunn/fzf.vim', {'do': { -> fzf#install() }}
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/goyo.vim'

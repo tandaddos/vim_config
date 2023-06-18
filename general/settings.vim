@@ -31,7 +31,7 @@ set hlsearch
 " map no highlight
 "nnoremap <leader>, :noh<cr>
 
-let mapleader = ";"
+let mapleader = " "
 
 " map jk kj to ESC
 inoremap jk <ESC>
